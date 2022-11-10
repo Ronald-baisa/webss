@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HTML VIDEO</title>
+</head>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background: gray;
+  }
+.title{
+  text-align: center;
+  font-size: 40px;
+  font-family: "Times New Roman";
+  border: 5px solid gold;
+} 
+.p1 {
+  font-size: 20px;
+  font-family: "Times New Roman";
+  padding: 20px;
+}
+.b1 {
+  background-color: #fff;
+  border-top: 3px solid gold;
+  font-size: 20px;
+  font-family: "Times New Roman";
+}
+.b1 code{
+  font-size: 15px;
+  font-family: "Times New Roman";
+}
+.b2 {
+  background-color: #fff;
+  border-top: 3px solid gold;
+  font-size: 20px;
+  font-family: "Times New Roman";
+}
+.b2 code{
+  font-size: 10px;
+  font-family: "Times New Roman";
+}
+</style>
+<body>
+  <p class="title">HTML VIDEO</p>
+  <p class="p1">The HTML video element is used to show a video on a web page.</p>
+  <p1 class="p1">Example:</p1>
+<div class="b1">
+<strong>
+ <code>
+       &lt;video width="320" height="240" controls&gt;
+  &lt;source src="movie.mp4" type="video/mp4"&gt;
+  &lt;source src="movie.ogg" type="video/ogg"&gt;
+    </code>
+    </strong>
+</div>   
+   <p class="p1"> How it Works
+<br><br>
+The controls attribute adds video controls, like play, pause, and volume.
+<br><br>
+It is a good idea to always include width and height attributes. If height and width are not set, the page might flicker while the video loads.
+<br><br>
+The  &lt;source> element allows you to specify alternative video files which the browser may choose from. The browser will use the first recognized format.
+<br><br>
+The text between the  &lt;video> and  &lt;/video> tags will only be displayed in browsers that do not support the  &lt;video> element.
+</p>
+<hr>
+<p class="p1">HTML &lt;video> Autoplay 
+To start a video automatically, use the autoplay attribute
+</p>
+  <p1 class="p1">Example:</p1>
+<div class="b2">
+<strong>
+ <code>
+&lt;video width="320" height="240" <mark>autoplay</mark>>
+  &lt;source src="movie.mp4" type="video/mp4">
+  &lt;source src="movie.ogg" type="video/ogg">
+Your browser does not support the video tag.
+&lt;/video>
+    </code>
+    </strong>
+</div>  
+<br><br><hr>
+<p class="p1">Add muted after autoplay to let your video start playing automatically (but muted):
+</p>
+  <p1 class="p1">Example:</p1>
+<div class="b2">
+<strong>
+ <code>
+&lt;video width="320" height="240" <mark>autoplay muted</mark>
+  &lt;source src="movie.mp4" type="video/mp4">
+  &lt;source src="movie.ogg" type="video/ogg">
+Your browser does not support the video tag.&lt;/video>
+    </code>
+    </strong>
+</div> 
+<br><br>
+ <center><a href=""><button class="p1" type="button">Back to home</button></a></center>
+</body>
+</html>
